@@ -23,8 +23,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,400italic' rel='stylesheet' type='text/css'>
 
-		<!-- bootstrap -->
-
+		<link rel="stylesheet" href="css/font-awesome.min.css">
 
 		<!-- fav icon -->
 	    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
@@ -56,38 +55,57 @@
 		      rgba(0, 0, 0, 0.35), 
 		      rgba(0, 0, 0, 0.35)
 		    ), 
-		    url('forest_bw_web.jpg') no-repeat center center fixed;
+		    url('img/the-mountain_web.jpg') no-repeat center center fixed;
 		        -webkit-background-size: cover;
 		-moz-background-size: cover;
 		-o-background-size: cover;
 		background-size: cover;
 		}
 
+		.intro h1{
+			font-family: 'Montserrat', sans-serif;
+    		text-align: center;
+    		text-transform: uppercase;
+    		font-size: 46px;
+    		margin: 30px 0px;
+    		letter-spacing: -1px;
+		}
+
+		section.intro {
+			border-radius: 5px;
+    		padding: 2em 4em;
+    		position: absolute;
+    		top: 50%;
+    		left: 50%;
+    		margin-right: -50%;
+    		transform: translate(-50%, -50%);
+    		background-color: white; 
+		}
+
 		/* social media */
-		.social{
-			margin:10px 0px;
-			font-size: 1.5em;
+		.social-icons {
+			height: auto;
+    		padding: 8px 0px;
+    		margin: 25px 0px;
+    		font-size: 1.5em;
 		}
 
-		.social p{
-			display: inline-block;
-			width:30px;
-			height:30px;
-			border-radius:30px;
-			font-size:15px;
-			line-height:30px;
-			text-align:center;
-			text-decoration:none;
-			color: transparent;
-			background:#0ba6c1;
-			border: 1px solid #0ba6c1;
-			margin: 2px;
-			
+		.social-icons li {
+			display: inline; 
 		}
-		.social-icon {
 
-			
-			}
+		.social-icons a{
+			text-decoration: none;
+    		color: #000000;
+    		padding: 5px;
+		}
+
+		.social-icons a:hover{
+    		color: #0ba6c1;
+    		-webkit-transition: all .3s;
+		  	-moz-transition: all .3s;
+		  	transition: all .3s;
+		}
 
 		a:hover {
 			text-decoration: none;
@@ -96,51 +114,28 @@
 		  	transition: all .3s;
 			}
 
-		section.intro {
-    		border-radius: 1em;
-    		padding: 1em;
-    		position: absolute;
-    		top: 50%;
-    		left: 50%;
-    		margin-right: -50%;
-    		transform: translate(-50%, -50%) 
-			}
-
-		.intro h1{
-				font-family: 'Open Sans', sans-serif;
-				text-align: center;
-				color:#FFFFFF;
-				font-weight: lighter;
-				font-size: 48px;
-				margin:15px 0px;
-			}
-		.intro h3{
-				font-family: 'Open Sans', sans-serif;
-				text-align: center;
-				color:#FFFFFF;
-				font-weight: lighter;
-			}
-
 		button {
-			border: 2px solid white;
+			border: 1px solid #000000;
 		 	padding: 10px 15px;
 		 	margin: 0px 2px;
 		  	background: transparent;
 		  	border-radius: 5px;
-		  	font-size: 12px;
+		  	font-size: 14px;
 		  	color:white;
 		  	text-transform: uppercase;
-		  	font-family: 'Open Sans', sans-serif;
+		  	font-family: 'Montserrat', sans-serif;
 		  	-webkit-transition: all .3s;
 		  	-moz-transition: all .3s;
 		  	transition: all .3s; 
+		  	color: #000000;
 			}
 
 		button:hover {
 			cursor: pointer;
 			color: white;
-			background-color: white;
-			color: black;
+			background-color: #0ba6c1;
+			border: 1px solid #0ba6c1;
+			color: white;
 			}
 
 		.action-buttons {
@@ -155,19 +150,20 @@
 		<section class="intro">
 		<h1>Vickie Misch</h1>
 		<div class="action-buttons">
-			<a href="#"><button>design</button></a>
-			<a href="https://www.linkedin.com/pub/vickie-misch/9/726/104"><button>LinkedIn</button></a>
-			<a href="mailto:vickie.misch@gmail.com"><button>email</button></a>
-			<a href="/VickieMisch-Designer-Resume.pdf"><button>resume</button></a>
-			<br>
+			<a href="https://www.behance.net/victoriamisch" target="_blank"><button>design</button></a>
+			<a href="https://www.linkedin.com/pub/vickie-misch/9/726/104" target="_blank"><button>LinkedIn</button></a>
+			<a href="mailto:vickie.misch@gmail.com" target="_blank"><button>email</button></a>
+			<a href="files/VickieMisch-Designer-Resume.pdf" target="_blank"><button>resume</button></a>
 
-			<div class="social">
-			 	<p><a href="https://www.linkedin.com/in/vickiemisch" class="social-icon" target="_blank"><i class="fa fa-linkedin"></i></a>&nbsp;</p>
-				<p><a href="https://www.instagram.com/thequeenvic/" class="social-icon" target="_blank"><i class="fa fa-instagram"></i></a>&nbsp;</p>
-				<p><a href="https://github.com/TheQueenVictoria" class="social-icon" target="_blank"><i class="fa fa-github"></i></a>&nbsp;</p>
-				<p><a href="https://twitter.com/vickiemisch" class="social-icon" target="_blank"><i class="fa fa-twitter"></i></a>&nbsp;</p>
-				<p><a href="https://www.pinterest.com/victoriamisch" class="social-icon" target="_blank"><i class="fa fa-pinterest"></i></a>&nbsp;</p>
-		</div><!-- end div.social -->
+			<div>
+				<ul class="social-icons">
+					<li><a href="https://www.linkedin.com/in/vickiemisch" class="social-icon" target="_blank"><i class="fa fa-linkedin"></i></a>&nbsp;</li>
+					<li><a href="https://www.instagram.com/thequeenvic/" class="social-icon" target="_blank"><i class="fa fa-instagram"></i></a>&nbsp;</li>
+					<li><a href="https://github.com/TheQueenVictoria" class="social-icon" target="_blank"><i class="fa fa-github"></i></a>&nbsp;</li>
+					<li><a href="https://twitter.com/vickiemisch" class="social-icon" target="_blank"><i class="fa fa-twitter"></i></a>&nbsp;</li>
+					<li><a href="https://www.pinterest.com/victoriamisch" class="social-icon" target="_blank"><i class="fa fa-pinterest"></i></a>&nbsp;</li>
+				</ul>
+			</div><!-- end div -->
 		</div>
 			
 		</section>
